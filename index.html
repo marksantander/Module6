@@ -1,20 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Display Data</title>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1 class="jumbotron text-center">Weather Dashboard</h1>
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Current Weather</h2>
+        <p>City:</p>
+        <p>Date:</p>
+        <p>Temp:</p>
+        <p>Wind: MPH</p>
+        <p>Humidity: %</p>
+      </div>
+      <div class="col-md-6">
+        <h2>5-Day Forecast</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Today</th>
+              <th>Temp</th>
+              <th>Wind</th>
+              <th>Humidity</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Day 1</td>
+              <td>°F</td>
+              <td>%</td>
+            </tr>
+            <tr>
+              <td>Day 2</td>
+              <td>°F</td>
+              <td>%</td>
+            </tr>
+            <tr>
+              <td>Day 3</td>
+              <td>°F</td>
+              <td>%</td>
+            </tr>
+            <tr>
+              <td>Day 4</td>
+              <td>°F</td>
+              <td>%</td>
+            </tr>
+            <tr>
+              <td>Day 5</td>
+              <td>°F</td>
+              <td>MPH</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</body>
 
-    <header>
-      <h1>Display Data</h1>
-      <p>...from JSON data</p>
-    </header>
-    <main>
-        <div id="myData"></div>
-    </main>
-    
-    <script src="./script.js"></script>
-  </body>
 </html>
